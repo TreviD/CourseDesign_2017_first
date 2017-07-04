@@ -1,6 +1,6 @@
 # CourseDesign_2017_first
 
-##大二上课程设计
+## 大二上课程设计
 包含如下：
 - 汉诺塔（GUI）Hannoi
 - 安卓程序设计 计算器 Calculator
