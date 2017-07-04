@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dmy.forward_sms.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="号码"
+            android:textColor="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/numText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入你要转发的号码"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="短信内容规则"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/ruleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入规则"
+            android:inputType="textMultiLine"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/BtnGroup_or_and"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_or"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton"
+                android:text="or"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn_and"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton"
+                android:text="and"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系人规则"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/ruleNumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入规则"
+            android:inputType="textMultiLine"/>
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickButton"
+            android:layout_marginBottom="20dp"
+            android:text="确定"/>
+
+        <Button
+            android:id="@+id/rule_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认规则"
+            android:onClick="clickButton"/>
+
+        <Switch
+            android:id="@+id/lanjie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="拦截"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="clickButton"
+            />
+
+        <Switch
+            android:id="@+id/zhuanfa"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="转发"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="clickButton"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

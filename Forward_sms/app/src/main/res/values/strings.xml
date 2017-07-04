@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">短信转发</string>
+    <string name="teach_help_text">
+        1、该应用可以基于短信内容和发信人号码进行正则匹配，从而进行拦截、转发操作
+        2、默认的规则 匹配的是 正常联系人的短信 以及各种验证码短信，你也可以自己编辑规则，可选择 短信规则与联系人规则的或与且
+        3、你可以选择 仅转发 仅拦截 或即转发又拦截
+
+
+        正则表达式
+        http://www.runoob.com/regexp/regexp-syntax.html
+
+
+
+
+    </string>
+    <string name="about_text">
+
+        Made by mingya_dai
+        contact：trevid@qq.com
+
+
+    </string>
+
+    <string name="NumTextRule">[1][1-9][\\d]{9}</string>
+
+
+    <string name="RuleTextRule">包裹|快递|快件|码|校验|提货|code</string>
+
+</resources>

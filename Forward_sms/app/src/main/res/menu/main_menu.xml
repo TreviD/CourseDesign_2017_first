@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_rubbish_sms"
+        android:icon="@drawable/sms"
+        android:title="垃圾短信"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_teach"
+        android:title="教程"/>
+    <item
+        android:id="@+id/menu_about"
+        android:title="关于"/>
+</menu>
